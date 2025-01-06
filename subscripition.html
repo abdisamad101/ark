@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube </title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="general.cs">
+    <link rel="stylesheet" href="yotube.css">
+    <link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="general.cs">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <style>
+ 
+@media (max-width:550px) {
+  .video-grid{
+display: flex;
+flex-direction: column;
+margin-left: -50px;
+  }
+ .middle-section, .right-section {
+    display: none;
+  }
+  
+
+}
+  </style>
+  <body style="margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);">
+<!--bvasvjfjkl;da'shjkdla;''-->
+    <header class="header">
+      <div class="left-section">
+        <!-- <img class="hamburger-menu" src="icons/hamburger-menu.svg"> -->
+        <div class="hamburger-menu" onclick="toggleSidebar()">
+          <img src="icons/hamburger-menu.svg" alt="Menu">
+        </div>
+        <a href="youtube.html">
+          <img style="margin-left: 40px;" class="youtube-logo" src="icons/youtube-logo.svg">
+        </a>
+      </div>
+      <div class="middle-section">
+        <input  class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="Youtube-app-cointainer">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="tooltip">youtube-apps</div>
+        </div>
+        <div class="notifications-icon-container">
+<!-- put position absolute insideposition relative-->
+          <div class="notification-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">9</div>
+          <div class="tooltip">notifications</div>
+        </div>
+      </div>
+      <!-- TOOLTIP-->
+      <div class="profile">
+        <div class="profile-icon" id="profile-icon">C</div>
+        <div class="dropdown" id="dropdown">
+            <a href="#">Google Account</a>
+            <a href="#">Switch Account</a>
+            <a href="#">Your Channel</a>
+            <a href="#">Sign Out</a>
+            <a href="#">youtube studio</a>
+            <a href="#">purchase and membership</a>
+            <a href="#">language:English</a>
+            <a href="#">keyboard shortcuts</a>
+        </div>
+    </div>
+
+      </div>
+    </header>
+   
+  
+    <button class="toggle-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  
+    <nav class="sidebar">
+     <br> <br>
+      <div  class="sidebar-link">
+        <a href="youtube.html"><img style="margin-left: 7px;" src="icons/home.svg"></a>
+     <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <a href="shorts.html"><img src="icons/explore (1).svg"></a>
+        <div>Shorts</div>
+      </div>
+      </div>
+      <div class="sidebar-link">
+   <a href="subscripition.html">
+    <img src="icons/subscriptions.svg">
+   </a>
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <a href="download.html">
+          <i style="color: rgb(68, 68, 68);font-size: 22px;" class="fa-solid fa-download"></i>
+
+        </a>
+        <div>Downloads</div>
+
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+
+
+      <div style="display: flex;justify-content: space-between;align-items: center;">
+        <div style="margin-left: 29px;font-family: roboto, arial;font-size: 22px;font-weight: 500;">Latest</div>
+        <div style="display: flex;align-items: center;gap: 20px;">
+          <p style="font-family: roboto, arial;font-size: 16px;font-weight: 700;color: blue;">manage</p>
+  <img src="icons/dots-removebg-preview.png" alt="">
+  <i style="font-size: 20px;" class="fa-solid fa-list"></i>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <section style="margin-top: 10px;" class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+         <a class="thumbnail" href="https://youtu.be/up74xBlpe7U?si=rNgr-s9kTUOX37xd" target="_blank">
+
+        <img class="thumbnail" src="sawika2.png" alt="">
+         </a>
+            <div class="video-time">14:20</div>
+          </div>   
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              
+             <a href="https://www.youtube.com/@MrRobot" target="_blank">
+              <img class="profile-picture" src="channel-1.jpeg" alt="">
+             </a>
+             <div>
+             <div class="profiles">
+          
+              
+              </div>
+             </div>
+            </div>
+            <div class="video-info">
+              <a href="https://youtu.be/up74xBlpe7U?si=rNgr-s9kTUOX37xd" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+              </a>
+             
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                3.4M views &#183; 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            
+            <a href="https://youtu.be/B1WrIsuZCL0?si=cKp3Okx36DZi87-I" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnail-8.webp">
+            </a>
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+                <img class="profile-picture" src="channel-2.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://youtu.be/B1WrIsuZCL0?si=cKp3Okx36DZi87-I" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  Mobile hacking | acess
+                  file | cyber security
+                </p>
+              </a>
+              <p class="video-author">
+                Markiplier
+              </p>
+              <p class="video-stats">
+                19M views &#183; 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/E-Xq8A0AvtY?si=G5fxFoI4QOlFYIk5" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnail-3.webp">
+            </a>
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/markiplier" target="_blank">
+                <img class="profile-picture" src="channel-4.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/E-Xq8A0AvtY?si=G5fxFoI4QOlFYIk5" target="_blank" class="video-title-link"> abu dabi police your safety is our goal
+        </a>
+  
+              </p>
+              <p class="video-author">
+                SSSniperWolf
+              </p>
+              <p class="video-stats">
+                12M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div> 
+      </section>
+
+      <section style="margin-top: 30px;" class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+         <a class="thumbnail" href="https://youtu.be/ICaY_wzNHr8?si=Ce7YJeu2nl8PDM5c" target="_blank">
+          <img class="thumbnail" src="thumbnail-4.webp" alt="">
+         </a>
+            <div class="video-time">14:20</div>
+          </div>   
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              
+             <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+              <img class="profile-picture" src="channel-9.jpeg" alt="">
+             </a>
+             <div>
+             <div class="profiles">
+          
+              
+              </div>
+             </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+              </a>
+             
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                3.4M views &#183; 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnail-5.webp">
+            </a>
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+                <img class="profile-picture" src="channel-3.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  Try Not To Laugh Challenge #9
+                </p>
+              </a>
+              <p class="video-author">
+                Markiplier
+              </p>
+              <p class="video-stats">
+                19M views &#183; 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnail-7.webp">
+            </a>
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/markiplier" target="_blank">
+                <img class="profile-picture" src="channel-5.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank" class="video-title-link"> Crazy Tik Toks Taken 
+                  Moments Before DISASTER</a>
+  
+              </p>
+              <p class="video-author">
+                SSSniperWolf
+              </p>
+              <p class="video-stats">
+                12M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+
+
+    
+      <main>
+        <section style="margin-top: 30px;" class="video-grid">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+           <a class="thumbnail" href="https://youtu.be/ICaY_wzNHr8?si=Ce7YJeu2nl8PDM5c" target="_blank">
+            <img class="thumbnail" src="thumbnail-8.webp" alt="">
+           </a>
+              <div class="video-time">14:20</div>
+            </div>   
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                
+               <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+                <img class="profile-picture" src="channel-6.jpeg" alt="">
+               </a>
+               <div>
+               <div class="profiles">
+            
+                
+                </div>
+               </div>
+              </div>
+              <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+                  <p class="video-title">
+                    Talking Tech and AI with Google CEO Sundar Pichai!
+                  </p>
+                </a>
+               
+                <p class="video-author">
+                  Marques Brownlee
+                </p>
+                <p class="video-stats">
+                  3.4M views &#183; 6 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              
+              <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank" class="video-title-link">
+                <img class="thumbnail" src="thumbnail-9 (1).webp">
+              </a>
+              <div class="video-time">8:22</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+                  <img class="profile-picture" src="channel-7.jpeg">
+                </a>
+              </div>
+              <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank" class="video-title-link">
+                  <p class="video-title">
+                    Try Not To Laugh Challenge #9
+                  </p>
+                </a>
+                <p class="video-author">
+                  Markiplier
+                </p>
+                <p class="video-stats">
+                  19M views &#183; 4 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank" class="video-title-link">
+                <img class="thumbnail" src="thumbnail-4.webp">
+              </a>
+              <div class="video-time">9:13</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/c/markiplier" target="_blank">
+                  <img class="profile-picture" src="channel-8.jpeg">
+                </a>
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank" class="video-title-link"> Crazy Tik Toks Taken 
+                    Moments Before DISASTER</a>
+    
+                </p>
+                <p class="video-author">
+                  SSSniperWolf
+                </p>
+                <p class="video-stats">
+                  12M views &#183; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      <section style="margin-top: 30px;" class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-10.webp">
+            <div class="video-time">7:53</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-10.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+              </p>
+              <p class="video-author">
+                Business Insider
+              </p>
+              <p class="video-stats">
+                14M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-11.webp">
+            <div class="video-time">4:10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-11.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+              </p>
+              <p class="video-author">
+                Destination Tips
+              </p>
+              <p class="video-stats">
+                3M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-12.webp">
+            <div class="video-time">4:51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-12.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                What would happen if you didn’t drink water? - Mia Nacamulli
+              </p>
+              <p class="video-author">
+                TED-Ed
+              </p>
+              <p class="video-stats">
+                12M views &#183; 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle-btn');
+      const sidebar = document.querySelector('.sidebar');
+  
+      toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('hidden');
+      });
+    </script>
+
+<script>
+  const profileIcon = document.getElementById("profile-icon");
+  const dropdown = document.getElementById("dropdown");
+
+  profileIcon.addEventListener("click", () => {
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  });
+
+  // Close dropdown when clicking outside
+  window.addEventListener("click", (event) => {
+      if (!event.target.matches("#profile-icon")) {
+          dropdown.style.display = "none";
+      }
+  });
+</script>
+  </body>
+</html>
+
+
+

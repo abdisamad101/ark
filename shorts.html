@@ -1,0 +1,393 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="yotube.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+
+
+ 
+  .video-grid{
+    display: flex;
+    flex-direction: column;
+    column-gap: 16px;
+ 
+  }
+
+
+
+  @media (max-width:550px) {
+  .video-grid{
+display: flex;
+flex-direction: column;
+  }
+ .middle-section, .right-section {
+    display: none;
+  }
+  
+
+}
+
+.video-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  gap: 30px;
+}
+
+.video {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+       
+    </style>
+</head>
+<body 
+style="margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);">
+
+
+<!--bvasvjfjkl;da'shjkdla;''-->
+<header class="header">
+  <div class="left-section">
+    <!-- <img class="hamburger-menu" src="icons/hamburger-menu.svg"> -->
+    <div class="hamburger-menu" onclick="toggleSidebar()">
+      <img src="icons/hamburger-menu.svg" alt="Menu">
+    </div>
+    <a href="youtube.html">
+      <img style="margin-left: 40px;" class="youtube-logo" src="icons/youtube-logo.svg">
+    </a>
+  </div>
+  <div class="middle-section">
+    <input  class="search-bar" type="text" placeholder="Search">
+    <button class="search-button">
+      <img class="search-icon" src="icons/search.svg">
+      <div class="tooltip">Search</div>
+    </button>
+    <button class="voice-search-button">
+      <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+      <div class="tooltip">Search with your voice</div>
+    </button>
+  </div>
+  <div class="right-section">
+    <div class="upload-icon-container">
+      <img class="upload-icon" src="icons/upload.svg">
+      <div class="tooltip">Create</div>
+    </div>
+    <div class="Youtube-app-cointainer">
+    <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+    <div class="tooltip">youtube-apps</div>
+    </div>
+    <div class="notifications-icon-container">
+<!-- put position absolute insideposition relative-->
+      <div class="notification-container">
+      <img class="notifications-icon" src="icons/notifications.svg">
+      <div class="notifications-count">9</div>
+      <div class="tooltip">notifications</div>
+    </div>
+  </div>
+  <!-- TOOLTIP-->
+  <div class="profile">
+    <div class="profile-icon" id="profile-icon">C</div>
+    <div class="dropdown" id="dropdown">
+        <a href="#">Google Account</a>
+        <a href="#">Switch Account</a>
+        <a href="#">Your Channel</a>
+        <a href="#">Sign Out</a>
+        <a href="#">youtube studio</a>
+        <a href="#">purchase and membership</a>
+        <a href="#">language:English</a>
+        <a href="#">keyboard shortcuts</a>
+    </div>
+</div>
+
+  </div>
+</header>
+
+
+<button class="toggle-btn">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+<nav class="sidebar">
+ <br> <br>
+  <div  class="sidebar-link">
+    <a href="youtube.html"><img style="margin-left: 7px;" src="icons/home.svg"></a>
+ <div>Home</div>
+  </div>
+  <div class="sidebar-link">
+    <a href="shorts.html"><img src="icons/explore (1).svg"></a>
+    <div>Shorts</div>
+  </div>
+  </div>
+  <div class="sidebar-link">
+    <a href="subscripition.html">
+      <img src="icons/subscriptions.svg">
+    </a>
+    <div>Subscriptions</div>
+  </div>
+  <div class="sidebar-link">
+<a href="download.html">
+  <i style="color: rgb(68, 68, 68);font-size: 22px;" class="fa-solid fa-download"></i>
+
+</a>
+    <div>Downloads</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="icons/youtube-music.svg">
+    <div>YouTube Music</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="icons/library.svg">
+    <div>Library</div>
+  </div>
+</nav>
+
+
+    <div class="bb">
+
+
+        
+    <div class="video-container">
+        <div class="video" id="video1">
+          <video src="v1 (1).mp4" controls></video>
+
+          
+        <div style="display: flex; flex-direction: column; gap: 40px    ; margin-left: 20px; align-items: center; margin-top: 20px;">  
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px; cursor: pointer;" class="  sh fa-solid fa-thumbs-up"></i>
+
+            <i  style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px;cursor: pointer; " class="  sh   fa-solid fa-thumbs-down"></i>
+
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px; cursor: pointer;" class=" sh fa-solid fa-comment"></i>
+
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px;cursor: pointer;"class=" sh fa-solid fa-share"></i>
+
+            <i   style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer;height: 30px;"  class="fa-solid fa-ellipsis-vertical"></i>
+
+            <!-- <i sstyle="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 24px;" class=" sh fa-solid fa-ellipsis-vertical"></i> -->
+
+
+
+
+
+
+        </div>
+        </div>
+        <div style="margin-top: 20px;" class="video" id="video2">
+          <video src="v1 (2).mp4" controls></video>
+          
+        <div style="display: flex; flex-direction: column; gap: 40px    ; margin-left: 20px; align-items: center; margin-top: 20px;">  
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px; cursor: pointer;" class="  sh fa-solid fa-thumbs-up"></i>
+
+            <i  style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px;cursor: pointer; " class="  sh   fa-solid fa-thumbs-down"></i>
+
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px; cursor: pointer;" class=" sh fa-solid fa-comment"></i>
+
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px;cursor: pointer;"class=" sh fa-solid fa-share"></i>
+
+            <i   style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer;"  class="fa-solid fa-ellipsis-vertical"></i>
+
+            <!-- <i sstyle="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 24px;" class=" sh fa-solid fa-ellipsis-vertical"></i> -->
+
+
+
+
+
+
+        </div>
+        </div>
+        <div style="margin-top: 20px;"  class="video" id="video3">
+          <video src="v1 (3).mp4" controls></video>
+          
+        <div style="display: flex; flex-direction: column; gap: 40px    ; margin-left: 20px; align-items: center; margin-top: 20px;">  
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px; cursor: pointer;" class="  sh fa-solid fa-thumbs-up"></i>
+
+            <i  style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px;cursor: pointer; " class="  sh   fa-solid fa-thumbs-down"></i>
+
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px; cursor: pointer;" class=" sh fa-solid fa-comment"></i>
+
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px;cursor: pointer;"class=" sh fa-solid fa-share"></i>
+
+            <i   style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer;"  class="fa-solid fa-ellipsis-vertical"></i>
+
+            <!-- <i sstyle="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 24px;" class=" sh fa-solid fa-ellipsis-vertical"></i> -->
+
+
+
+
+
+ </div>
+        </div>
+        <div style="margin-top: 20px;"  class="video" id="video3">
+          <video src="v1 (4).mp4" controls></video>
+          
+        <div style="display: flex; flex-direction: column; gap: 40px    ; margin-left: 20px; align-items: center; margin-top: 20px;">  
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px; cursor: pointer;" class="  sh fa-solid fa-thumbs-up"></i>
+
+            <i  style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px;cursor: pointer; " class="  sh   fa-solid fa-thumbs-down"></i>
+
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px; cursor: pointer;" class=" sh fa-solid fa-comment"></i>
+
+            <i style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 10px;cursor: pointer;"class=" sh fa-solid fa-share"></i>
+
+            <i   style="font-size: 30px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer;"  class="fa-solid fa-ellipsis-vertical"></i>
+
+            <!-- <i sstyle="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 24px;" class=" sh fa-solid fa-ellipsis-vertical"></i> -->
+
+
+<br> <br>
+
+
+
+        </div>
+        </div>
+      </div>
+      
+
+    
+
+
+<!-- 
+    <main style="display: flex; justify-content: center; position: relative; ">
+        <video style="border-radius: 30px; margin-top: -10px;"  controls> <source src="v1 (1).mp4"></video>
+
+        
+      
+
+
+
+
+    </main>
+
+
+    <main style="display: flex; justify-content: center; position: relative; margin-top: 30px;">
+    <video style="border-radius: 30px; margin-top: -10px;  scroll-snap-align: start;"  controls> <source src="v1 (2).mp4"></video>
+
+    <div style="display: flex; flex-direction: column; gap: 40px    ; margin-left: 20px; align-items: center; margin-top: 280px;">  
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px; cursor: pointer;" class="  sh fa-solid fa-thumbs-up"></i>
+
+        <i  style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer; " class="  sh   fa-solid fa-thumbs-down"></i>
+
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px; cursor: pointer;" class=" sh fa-solid fa-comment"></i>
+
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer;"class=" sh fa-solid fa-share"></i>
+
+        <i   style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 28px;cursor: pointer;"  class="fa-solid fa-ellipsis-vertical"></i>
+
+        <!-- <i sstyle="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 24px;" class=" sh fa-solid fa-ellipsis-vertical"></i> -->
+
+
+
+
+
+<!-- 
+    </div>
+</main>
+    <main style="display: flex; justify-content: center; position: relative; margin-top: 30px;">
+    <video style="border-radius: 30px; margin-top: -10px;"  controls> <source src="v1 (3).mp4"></video>
+
+    <div style="display: flex; flex-direction: column; gap: 40px    ; margin-left: 20px; align-items: center; margin-top: 280px;">  
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px; cursor: pointer;" class="  sh fa-solid fa-thumbs-up"></i>
+
+        <i  style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer; " class="  sh   fa-solid fa-thumbs-down"></i>
+
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px; cursor: pointer;" class=" sh fa-solid fa-comment"></i>
+
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer;"class=" sh fa-solid fa-share"></i>
+
+        <i   style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 28px;cursor: pointer;"  class="fa-solid fa-ellipsis-vertical"></i> -->
+
+        <!-- <i sstyle="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 24px;" class=" sh fa-solid fa-ellipsis-vertical"></i> -->
+
+
+
+
+
+<!-- 
+    </div>
+</main>
+</main>
+    <main style="display: flex; justify-content: center; position: relative; margin-top: 30px;">
+    <video style="border-radius: 30px; margin-top: -10px;" controls> <source src="v1 (4).mp4"></video>
+
+    <div style="display: flex; flex-direction: column; gap: 40px    ; margin-left: 20px; align-items: center; margin-top: 280px;">  
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px; cursor: pointer;" class="  sh fa-solid fa-thumbs-up"></i>
+
+        <i  style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer; " class="  sh   fa-solid fa-thumbs-down"></i>
+
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px; cursor: pointer;" class=" sh fa-solid fa-comment"></i>
+
+        <i style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 20px;cursor: pointer;"class=" sh fa-solid fa-share"></i>
+
+        <i   style="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 28px;cursor: pointer;"  class="fa-solid fa-ellipsis-vertical"></i>
+
+        <!-- <i sstyle="font-size: 36px; background-color: rgb(224, 224, 224); border-radius: 100%; padding: 24px;" class=" sh fa-solid fa-ellipsis-vertical"></i> -->
+
+
+    </div>
+
+
+    
+
+    
+
+
+
+
+
+    </div>
+</main> 
+
+   
+
+
+
+<script>
+  const toggleBtn = document.querySelector('.toggle-btn');
+  const sidebar = document.querySelector('.sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('hidden');
+  });
+</script>
+
+
+<script>
+  const profileIcon = document.getElementById("profile-icon");
+  const dropdown = document.getElementById("dropdown");
+
+  profileIcon.addEventListener("click", () => {
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  });
+
+  // Close dropdown when clicking outside
+  window.addEventListener("click", (event) => {
+      if (!event.target.matches("#profile-icon")) {
+          dropdown.style.display = "none";
+      }
+  });
+</script>
+</body>
+</html>
+</body>
+</html>
